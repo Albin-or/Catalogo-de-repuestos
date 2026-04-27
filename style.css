@@ -15,6 +15,8 @@
     background-color: rgb(255, 255, 255);
     padding: 10px;
     position: sticky;
+    z-index: 1;
+    border-bottom: 1px solid #ddd;
 }
 .search {
     display: flex;
@@ -143,6 +145,13 @@
     flex-direction: column;
     gap: 6px;
 }
+.product-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #CC0000;
+    margin: 0;
+    text-transform: uppercase;
+}
 
 /* Etiqueta de Categoría (Texto pequeño arriba) */
 .category-tag {
@@ -243,7 +252,7 @@
     align-items: center;
 }
 
-.product-title {
+.main-product-title {
     margin: 0;             
     font-size: 1.6rem;
     color: #b82a2a;

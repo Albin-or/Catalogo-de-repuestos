@@ -32,87 +32,24 @@
             </aside>
             <section class="results">
                 <h2>Resultados</h2>
-                <!-- Ejemplo de producto -->
-                <article class="product-card">
-                    <a href="item.html">
-                        <!-- Contenedor de imagen para control total -->
-                        <div class="product-image">
-                            <img alt="Pistones de Corolla 90-98" src="https://http2.mlstatic.com/D_NQ_NP_990338-MLV81142267754_122024-O.webp">
-                        </div>
-
-                        <!-- Contenedor de información con padding -->
-                        <div class="product-info">
-                            <span class="category-tag">Motor</span>
-                            <h3 class="part-number">PN: 12345</h3>
-                            <p class="description">Pistones de Corolla 90-98 para modelos antiguos</p>
-
-                            <div class="card-footer">
-                                <span class="view-details">Ver detalle</span>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-
-                <article class="product-card">
-                    <a href="item.html">
-                        <!-- Contenedor de imagen para control total -->
-                        <div class="product-image">
-                            <img alt="Pistones de Corolla 90-98" src="https://http2.mlstatic.com/D_NQ_NP_990338-MLV81142267754_122024-O.webp">
-                        </div>
-
-                        <!-- Contenedor de información con padding -->
-                        <div class="product-info">
-                            <span class="category-tag">Motor</span>
-                            <h3 class="part-number">PN: 12345</h3>
-                            <p class="description">Pistones de Corolla 90-98 para modelos antiguos</p>
-
-                            <div class="card-footer">
-                                <span class="view-details">Ver detalle</span>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-
-                <article class="product-card">
-                    <a href="item.html">
-                        <!-- Contenedor de imagen para control total -->
-                        <div class="product-image">
-                            <img alt="Pistones de Corolla 90-98" src="https://http2.mlstatic.com/D_NQ_NP_990338-MLV81142267754_122024-O.webp">
-                        </div>
-
-                        <!-- Contenedor de información con padding -->
-                        <div class="product-info">
-                            <span class="category-tag">Motor</span>
-                            <h3 class="part-number">PN: 12345</h3>
-                            <p class="description">Pistones de Corolla 90-98 para modelos antiguos</p>
-
-                            <div class="card-footer">
-                                <span class="view-details">Ver detalle</span>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-
-                <article class="product-card">
-                    <a href="item.html">
-                        <!-- Contenedor de imagen para control total -->
-                        <div class="product-image">
-                            <img alt="Pistones de Corolla 90-98" src="https://http2.mlstatic.com/D_NQ_NP_990338-MLV81142267754_122024-O.webp">
-                        </div>
-
-                        <!-- Contenedor de información con padding -->
-                        <div class="product-info">
-                            <span class="category-tag">Motor</span>
-                            <h3 class="part-number">PN: 12345</h3>
-                            <p class="description">Pistones de Corolla 90-98 para modelos antiguos</p>
-
-                            <div class="card-footer">
-                                <span class="view-details">Ver detalle</span>
-                            </div>
-                        </div>
-                    </a>
-                </article>
+                
             </section>
+            <template id="product-card-template">
+                <article class="product-card">
+                    <a href="item.html" class="card-link">
+                        <div class="product-image"></div>
+                        <div class="product-info">
+                            <h3 class="product-title"></h3>
+                            <span class="category-tag"></span>
+                            <data value="" class="part-number"></data>
+                            <p class="description"></p>
+                            <footer class="card-footer">
+                                <span class="view-details">Ver detalle</span>
+                            </footer>
+                        </div>
+                    </a>
+                </article>
+            </template>
         </main>
     </body>
 </html>
