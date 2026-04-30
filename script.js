@@ -22,6 +22,11 @@ function render(productsToShow) {
     let h2 = results.querySelector('h2');
     results.innerHTML = '';
     results.appendChild(h2);
+    if (productsToShow.length === 0) {
+        let noResults = document.createElement('p');
+        noResults.textContent = 'No se encontraron resultados.';
+        results.appendChild(noResults);
+    }
     let productTemplate = document.querySelector('#product-card-template').content;
     productsToShow.forEach(product => {
         let clon = document.importNode(productTemplate, true);
@@ -35,18 +40,22 @@ function render(productsToShow) {
         results.appendChild(clon);
     });
 }
-
-function addFilterListeners() {
-    document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
-        cb.addEventListener('change', () => {
-            let categories = Array.from(document.querySelectorAll('input[name="category"]:checked')).map(cb => cb.value);
-            let models = Array.from(document.querySelectorAll('input[name="model"]:checked')).map(cb => cb.value);
-            let filtered = products.filter(product => {
-                let categoryMatch = categories.length === 0 || categories.some(cat => product.categoria.toLowerCase() === cat.toLowerCase());
-                let modelMatch = models.length === 0 || models.some(mod => product.modelo.toLowerCase().includes(mod.toLowerCase()));
-                return categoryMatch && modelMatch;
-            });
-            render(filtered);
-        });
+const cleanText = (text) => { return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); };
+function applyFilters() {
+    let categories = Array.from(document.querySelectorAll('input[name="category"]:checked')).map(cb => cleanText(cb.value));
+    let models = Array.from(document.querySelectorAll('input[name="model"]:checked')).map(cb => cleanText(cb.value));
+    let query = cleanText(document.querySelector('input[type="search"]').value);
+    let filteredProducts = products.filter(product => {
+        let matchesCategory = categories.length === 0 || categories.some(category => category === cleanText(product.categoria));
+        let matchesModel = models.length === 0 || models.some(model => model === cleanText(product.modelo));
+        let matchesQuery = query === '' || cleanText(product.numero_parte).includes(query) || cleanText(product.nombre).includes(query) || cleanText(product.descripcion).includes(query);
+        return matchesCategory && matchesModel && matchesQuery;
     });
+    render(filteredProducts);
+}
+function addFilterListeners() {
+    document.querySelectorAll('input[name="category"], input[name="model"]').forEach(cb => {
+        cb.addEventListener('change', applyFilters);
+    });
+    document.querySelector('input[type="search"]').addEventListener('input', applyFilters);
 }
