@@ -7,6 +7,7 @@
     "descripcion": "Kit de pistones medida estándar para motores 4AFE/7AFE.",
     "imagen": "https://partsouq.com/assets/tesseract/assets/partsimages/Toyota/131011610002.jpg",
     "modelo": "Corolla",
+    "marcas": ["ART", "MAHLE"],
     "url": "item.html?id=1"
   },
   {
@@ -17,6 +18,7 @@
     "descripcion": "Juego completo de juntas para motor 2KD 2.5 Diesel.",
     "imagen": "https://image.made-in-china.com/202f0j00mYPMgLHlhikV/Toyota-2KD-Engine-Gasket-Kit.webp",
     "modelo": "Hilux / Kavak",
+    "marcas": ["AISIN"],
     "url": "item.html?id=2"
   },
   {
@@ -27,6 +29,7 @@
     "descripcion": "Filtro genuino para Toyota Fortuner y 4Runner (Motores 1GR-FE).",
     "imagen": "https://images.unsplash.com/photo-grHj2MtYB4M?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
     "modelo": "4Runner / Fortuner",
+    "marcas": ["DENSO", "Fram", "Bosch"],
     "url": "item.html?id=3"
   },
   {
@@ -37,6 +40,7 @@
     "descripcion": "Par de discos ventilados para Toyota Corolla 2009-2014.",
     "imagen": "https://images.unsplash.com/photo-47JSI7xMyUo?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
     "modelo": "Corolla New Sensation",
+    "marcas": ["Brembo"],
     "url": "item.html?id=4"
   },
   {
@@ -47,6 +51,7 @@
     "descripcion": "Radiador de alta eficiencia para Toyota Tacoma y Hilux.",
     "imagen": "https://images.unsplash.com/photo-VZDzvfLnuBw?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
     "modelo": "Tacoma / Hilux",
+    "marcas": ["DENSO", "Behr"],
     "url": "item.html?id=5"
   },
   {
@@ -57,6 +62,7 @@
     "descripcion": "Bujías de alto rendimiento para Hilux, Corolla y Yaris.",
     "imagen": "https://images.unsplash.com/photo-8_DwIeEiNEE?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
     "modelo": "Universal Toyota",
+    "marcas": ["DENSO", "NGK", "Bosch"],
     "url": "item.html?id=6"
   },
   {
@@ -67,6 +73,7 @@
     "descripcion": "Faro principal para Toyota Corolla 2015-2018.",
     "imagen": "https://images.unsplash.com/photo-xnQ4efcTseU?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
     "modelo": "Corolla",
+    "marcas": ["Hella"],
     "url": "item.html?id=7"
   },
   {
@@ -77,6 +84,7 @@
     "descripcion": "Filtro de aire de alta capacidad para Toyota Camry.",
     "imagen": "https://images.unsplash.com/photo-OFMdXEN2Otc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
     "modelo": "Camry",
+    "marcas": ["DENSO", "Mann"],
     "url": "item.html?id=8"
   },
   {
@@ -87,6 +95,7 @@
     "descripcion": "Aceite sintético genuino Toyota (Full Synthetic) 1 Galón.",
     "imagen": "https://images.unsplash.com/photo-E4MUiMYIs1k?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
     "modelo": "Universal Toyota",
+    "marcas": ["Castrol", "Mobil", "Pennzoil"],
     "url": "item.html?id=9"
   },
   {
@@ -97,6 +106,7 @@
     "descripcion": "Kit de pastillas delanteras para Hilux Revo y SW4 Fortuner.",
     "imagen": "https://images.unsplash.com/photo-2EKPaz68qno?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
     "modelo": "Hilux / Fortuner",
+    "marcas": ["Brembo", "ATE"],
     "url": "item.html?id=10"
   },
   {
@@ -107,6 +117,7 @@
     "descripcion": "Correa de distribución genuina para modelos 1HZ y 1HD.",
     "imagen": "https://images.unsplash.com/photo-YtzYvxf6Twk",
     "modelo": "Land Cruiser",
+    "marcas": ["Gates"],
     "url": "item.html?id=11"
   },
   {
@@ -117,6 +128,7 @@
     "descripcion": "Hojas de limpiaparabrisas Toyota Sightline de 24 pulgadas.",
     "imagen": "https://images.unsplash.com/photo-iEaUn8q3rl0",
     "modelo": "Rav4 / Camry",
+    "marcas": ["Bosch", "Valeo", "Trico"],
     "url": "item.html?id=12"
   },
   {
@@ -127,6 +139,7 @@
     "descripcion": "Amortiguador de gas para Toyota Yaris Sedan.",
     "imagen": "https://images.unsplash.com/photo-I_F720bnPjc",
     "modelo": "Yaris",
+    "marcas": ["KYB"],
     "url": "item.html?id=13"
   },
   {
@@ -137,6 +150,7 @@
     "descripcion": "Filtro de succión para bomba de gasolina Toyota.",
     "imagen": "https://images.unsplash.com/photo-8wRLU9j2vVU",
     "modelo": "Universal Toyota",
+    "marcas": ["Bosch", "Mann"],
     "url": "item.html?id=14"
   },
   {
@@ -147,6 +161,7 @@
     "descripcion": "Bomba de agua original para motor 1GR-FE V6.",
     "imagen": "https://images.unsplash.com/photo-i-PxT3zhK4w",
     "modelo": "4Runner / FJ Cruiser",
+    "marcas": ["AISIN", "GMB"],
     "url": "item.html?id=15"
   }
 ]

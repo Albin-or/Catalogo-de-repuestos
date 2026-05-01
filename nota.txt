@@ -1,0 +1,2 @@
+cosas por hacer: hacer una paginacion y hacer funcionar filtros incluyendo marcas
+hacer funcionar el html item
