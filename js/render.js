@@ -1,19 +1,19 @@
 export function renderProducts(productsToShow) {
-    const results = document.querySelector('.results');
-    if (!results) {
+    const productsGrid = document.querySelector('.products-grid');
+    if (!productsGrid) {
         return;
     }
 
-    const title = results.querySelector('h2');
-    results.innerHTML = '';
+    const title = productsGrid.querySelector('h2');
+    productsGrid.innerHTML = '';
     if (title) {
-        results.appendChild(title);
+        productsGrid.appendChild(title);
     }
 
     if (!productsToShow || productsToShow.length === 0) {
         const noResults = document.createElement('p');
         noResults.textContent = 'No se encontraron resultados.';
-        results.appendChild(noResults);
+        productsGrid.appendChild(noResults);
         return;
     }
 
@@ -48,6 +48,6 @@ export function renderProducts(productsToShow) {
             productImage.setAttribute('src', product.imagen);
         }
 
-        results.appendChild(clon);
+        productsGrid.appendChild(clon);
     });
 }
